@@ -18,7 +18,8 @@ class Splacescreen extends StatelessWidget {
           decoration: const BoxDecoration(
             image: DecorationImage(
               fit: BoxFit.cover,
-              image: AssetImage("lib/assets/Animation - 1701413363430.gif"),
+              image: AssetImage(
+                  "lib/uitilies/assets/Animation - 1701413363430.gif"),
             ),
           ),
         ),

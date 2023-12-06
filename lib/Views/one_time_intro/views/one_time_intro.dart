@@ -22,7 +22,7 @@ class introscreen extends StatelessWidget {
                 image: DecorationImage(
                   fit: BoxFit.cover,
                   image: AssetImage(
-                    "lib/assets/Animation - 1701414269096.gif",
+                    "lib/uitilies/assets/Animation - 1701414269096.gif",
                   ),
                 ),
               ),
@@ -39,7 +39,7 @@ class introscreen extends StatelessWidget {
                 image: DecorationImage(
                   fit: BoxFit.cover,
                   image: AssetImage(
-                    "lib/assets/Animation - 1701671783641.gif",
+                    "lib/uitilies/assets/Animation - 1701671783641.gif",
                   ),
                 ),
               ),
@@ -56,7 +56,7 @@ class introscreen extends StatelessWidget {
                 image: DecorationImage(
                   fit: BoxFit.cover,
                   image: AssetImage(
-                    "lib/assets/Animation - 1701671583001.gif",
+                    "lib/uitilies/assets/Animation - 1701671583001.gif",
                   ),
                 ),
               ),
@@ -72,7 +72,7 @@ class introscreen extends StatelessWidget {
                 image: DecorationImage(
                   fit: BoxFit.cover,
                   image: AssetImage(
-                    "lib/assets/Animation - 1701414269096.gif",
+                    "lib/uitilies/assets/Animation - 1701414269096.gif",
                   ),
                 ),
               ),
@@ -80,7 +80,7 @@ class introscreen extends StatelessWidget {
           ),
         ],
         onDone: () async {
-          Navigator.pushReplacementNamed(context, 'h');
+          Navigator.pushReplacementNamed(context, 'home');
           SharedPreferences preferences = await SharedPreferences.getInstance();
           preferences.setBool("Isvisited", true);
         },

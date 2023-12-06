@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../provider/themeprovider.dart';
+import '../../../platform_provider/platform_provider.dart';
 
 class home extends StatelessWidget {
   const home({super.key});
@@ -9,23 +9,33 @@ class home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(
+              icon: Icon(Icons.add_call), label: "Add_Contact"),
+          BottomNavigationBarItem(icon: Icon(Icons.chat), label: "Chat"),
+          BottomNavigationBarItem(icon: Icon(Icons.call), label: "Call"),
+          BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Setting"),
+        ],
+      ),
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
           "contact app",
         ),
         actions: [
-          IconButton(
-            onPressed: () {
-              Provider.of<ThemeProvider>(context, listen: true).changeTheme();
-            },
-            icon: Icon(
-              Icons.dark_mode,
-            ),
-          ),
+          const Text("Platform converter"),
+          Switch(
+              value: Provider.of<PlatformProvider>(context, listen: true)
+                  .platform
+                  .isIos,
+              onChanged: (val) {
+                Provider.of<PlatformProvider>(context, listen: false)
+                    .changePlatform();
+              })
         ],
       ),
-      body: Column(
+      body: const Column(
         children: [],
       ),
     );
