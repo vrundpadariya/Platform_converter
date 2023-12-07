@@ -17,6 +17,7 @@ class home extends StatelessWidget {
           BottomNavigationBarItem(icon: Icon(Icons.call), label: "Call"),
           BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Setting"),
         ],
+        onTap: (val) {},
       ),
       appBar: AppBar(
         centerTitle: true,
