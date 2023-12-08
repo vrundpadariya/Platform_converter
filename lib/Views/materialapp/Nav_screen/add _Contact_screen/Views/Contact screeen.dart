@@ -5,6 +5,36 @@ class Contactscreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Center(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            const Text(
+              "Create contact",
+            ),
+            Stepper(
+              currentStep: 0,
+              onStepContinue: () {},
+              onStepCancel: () {},
+              steps: const [
+                Step(
+                  title: Text(
+                    "Photo",
+                  ),
+                  content: CircleAvatar(
+                    radius: 90.5,
+                    backgroundColor: Colors.black,
+                    child: CircleAvatar(
+                      radius: 90,
+                    ),
+                  ),
+                ),
+              ],
+            )
+          ],
+        ),
+      ),
+    );
   }
 }

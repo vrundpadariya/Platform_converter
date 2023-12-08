@@ -7,6 +7,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'Views/cupertino/views/ioshome.dart';
 import 'Views/materialapp/model/theme/Thememodel.dart';
+import 'Views/materialapp/provider/indexprovider.dart';
 import 'Views/materialapp/provider/themeprovider.dart';
 import 'Views/materialapp/views/home.dart';
 import 'Views/one_time_intro/views/one_time_intro.dart';
@@ -30,6 +31,9 @@ void main() async {
         ListenableProvider(
           create: (ctx) => PlatformProvider(),
         ),
+        ListenableProvider(
+          create: (ctx) => NavigationProvider(),
+        ),
       ],
       builder: (context, widget) =>
           (Provider.of<PlatformProvider>(context, listen: true)
@@ -44,7 +48,7 @@ void main() async {
                   routes: {
                     '/': (ctx) => const Splacescreen(),
                     'intro': (ctx) => const introscreen(),
-                    'home': (ctx) => const home(),
+                    'home': (ctx) => home(),
                   },
                 )
               : const CupertinoApp(
