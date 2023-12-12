@@ -84,9 +84,9 @@ class introscreen extends StatelessWidget {
           SharedPreferences preferences = await SharedPreferences.getInstance();
           preferences.setBool("Isvisited", true);
         },
-        done: Text("Done"),
+        done: const Text("Done"),
         showNextButton: true,
-        next: Text("Next"),
+        next: const Text("Next"),
       ),
     );
   }

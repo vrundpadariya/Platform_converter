@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'Views/cupertino/views/ioshome.dart';
+import 'Views/materialapp/Nav_screen/add _Contact_screen/provider/continueprovider.dart';
 import 'Views/materialapp/model/theme/Thememodel.dart';
 import 'Views/materialapp/provider/indexprovider.dart';
 import 'Views/materialapp/provider/themeprovider.dart';
@@ -34,6 +35,9 @@ void main() async {
         ListenableProvider(
           create: (ctx) => NavigationProvider(),
         ),
+        ListenableProvider(
+          create: (ctx) => continueprovider(),
+        ),
       ],
       builder: (context, widget) =>
           (Provider.of<PlatformProvider>(context, listen: true)
@@ -44,7 +48,7 @@ void main() async {
                   debugShowCheckedModeBanner: false,
                   theme: apptheme.Light,
                   darkTheme: apptheme.Dark,
-                  initialRoute: (isvisited) ? 'home' : 'intro',
+                  initialRoute: (isvisited) ? 'home' : '/',
                   routes: {
                     '/': (ctx) => const Splacescreen(),
                     'intro': (ctx) => const introscreen(),

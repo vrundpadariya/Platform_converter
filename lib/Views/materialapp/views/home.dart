@@ -26,11 +26,12 @@ class home extends StatelessWidget {
           BottomNavigationBarItem(icon: Icon(Icons.call), label: "Call"),
           BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Setting"),
         ],
-        currentIndex: Provider.of<NavigationProvider>(context)
+        currentIndex: Provider.of<NavigationProvider>(context, listen: true)
             .navigationindex
             .selectindex,
         onTap: (val) {
-          Provider.of<NavigationProvider>(context).pageController;
+          Provider.of<NavigationProvider>(context, listen: false)
+              .pageController;
         },
       ),
       appBar: AppBar(
