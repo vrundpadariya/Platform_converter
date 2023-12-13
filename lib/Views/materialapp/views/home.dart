@@ -11,7 +11,7 @@ class home extends StatelessWidget {
   home({super.key});
   List<Widget> pages = [
     contact(),
-    const call_screen(),
+    call_screen(),
     const settingscreen(),
   ];
 

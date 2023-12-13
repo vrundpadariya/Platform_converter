@@ -5,6 +5,7 @@ import 'package:platform_converter/uitilies/Theme/Theme.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'Views/cupertino/cupertinotab/addcontact/provider/contactprovider.dart';
 import 'Views/cupertino/views/ioshome.dart';
 import 'Views/materialapp/Nav_screen/add _Contact_screen/provider/continueprovider.dart';
 import 'Views/materialapp/Nav_screen/add _Contact_screen/provider/dateandtimeprovider.dart';
@@ -32,6 +33,9 @@ void main() async {
         ),
         ListenableProvider(
           create: (ctx) => PlatformProvider(),
+        ),
+        ListenableProvider(
+          create: (ctx) => Platform_Provider(),
         ),
         ListenableProvider(
           create: (ctx) => NavigationProvider(),

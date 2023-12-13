@@ -1,11 +1,14 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../add _Contact_screen/provider/contactprovider.dart';
 
 class call_screen extends StatelessWidget {
-  const call_screen({super.key});
-
+  call_screen({super.key});
+  XFile? image;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +23,9 @@ class call_screen extends StatelessWidget {
             ),
             child: ListTile(
               leading: CircleAvatar(
-                backgroundColor: Colors.lightBlue.withOpacity(.5),
+                foregroundImage: FileImage(
+                  File("${image?.path}"),
+                ),
                 child: Text(
                   "${ContactProvider.allcontact[i].firstname[0]}",
                   style: TextStyle(
@@ -47,23 +52,6 @@ class call_screen extends StatelessWidget {
           );
         },
       ),
-
-      //     : Center(
-      //         child: Column(
-      //           mainAxisAlignment: MainAxisAlignment.center,
-      //           children: [
-      //             Container(
-      //               height: 150,
-      //               width: 150,
-      //               decoration: const BoxDecoration(),
-      //             ),
-      //             const Text(
-      //               "No Contact found",
-      //               style: TextStyle(fontSize: 15),
-      //             ),
-      //           ],
-      //         ),
-      //       ),
     );
   }
 }
