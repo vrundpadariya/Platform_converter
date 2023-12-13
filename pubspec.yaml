@@ -38,6 +38,9 @@ dependencies:
   introduction_screen:
   provider:
   shared_preferences:
+  image_picker:
+  url_launcher:
+  share_plus:
 
 dev_dependencies:
   flutter_test:

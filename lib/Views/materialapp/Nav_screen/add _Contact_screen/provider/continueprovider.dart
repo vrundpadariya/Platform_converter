@@ -4,7 +4,7 @@ import 'package:platform_converter/Views/materialapp/Nav_screen/add%20_Contact_s
 class continueprovider extends ChangeNotifier {
   Continue c = Continue(currentsteps: 0);
   void Continuestep() {
-    if (c.currentsteps != 3) {
+    if (c.currentsteps != 4) {
       c.currentsteps++;
     }
 

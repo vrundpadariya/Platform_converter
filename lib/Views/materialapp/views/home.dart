@@ -10,7 +10,7 @@ import '../provider/indexprovider.dart';
 class home extends StatelessWidget {
   home({super.key});
   List<Widget> pages = [
-    const Contactscreen(),
+    contact(),
     const call_screen(),
     const settingscreen(),
   ];
