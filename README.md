@@ -1,16 +1,28 @@
-# platform_converter
+# platform_converter_flutter_app
 
-A new Flutter project.
+This project is about call and contact dairy app with some feature 
+-calling 
+-Theme changer
+-add contact
+-profile 
+and many more features are there and we will applied more feature 
+int his app in the future.
 
-## Getting Started
+This app is made in only stateless Widget and there are some more thing the app is done 
+like
+-stateless widget are used
+- android and ios side converter 
+- splash screen
+- one time introduction screen
+- light dark and color combination
+- provider
+- 
+Now,let talk about the detail and some more things about this app 
+for splash screen i had use lottie animation for more effictive ui of the app 
+in the one time same lottie animation has used and there some good line had been written by me if you see😅😅
+about add your freinds and familuy in this app and can talk or do sms 
+after splash and one time intro screen there home page will show in that at appbar there is switch
+were platform were been converted android to ios and ios to android after there are 3 navigation bar in ios and android 
+there is rest of the detail that have mentioned above 
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+thank you for reading this...
