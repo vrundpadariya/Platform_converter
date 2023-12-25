@@ -24,13 +24,6 @@ after splash and one time intro screen there home page will show in that at appb
 were platform were been converted android to ios and ios to android after there are 3 navigation bar in ios and android 
 there is rest of the detail that have mentioned above 
 
-thank you for reading this...
-
-
-
-
-
-
 
 <img src="https://github.com/vrundpadariya/Platform_converter/assets/133338321/e01fcdea-5c91-4092-9f1f-070bec37907b" width="250px">
 
